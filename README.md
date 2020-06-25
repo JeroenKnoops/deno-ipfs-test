@@ -1,6 +1,12 @@
-# DENO tests
+# DENO IPFS tests
+
+<center>
+![IPFS](https://ipfs.io/ipfs/QmQKtMcLLnhQxY1pfKjDc1M19zqKq8WDTJhAwSKissVvns) + ![DENO](https://ipfs.io/ipfs/QmWbns85eo4nhZfWdUCWguQn7NTuwKDhPFGRPkCLSEUKSQ)
+</center>
 
 ## Purpose
+
+Let's get DENO work together with IPFS to get it's libraries.
 
 ## Phase 1 - Get Deno working
 
