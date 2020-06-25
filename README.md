@@ -1,8 +1,8 @@
 # DENO IPFS tests
 
-<center>
-![IPFS](https://ipfs.io/ipfs/QmQKtMcLLnhQxY1pfKjDc1M19zqKq8WDTJhAwSKissVvns) + ![DENO](https://ipfs.io/ipfs/QmWbns85eo4nhZfWdUCWguQn7NTuwKDhPFGRPkCLSEUKSQ)
-</center>
+<div align="center">
+<img src="https://ipfs.io/ipfs/QmQKtMcLLnhQxY1pfKjDc1M19zqKq8WDTJhAwSKissVvns"/> + <img src="https://ipfs.io/ipfs/QmWbns85eo4nhZfWdUCWguQn7NTuwKDhPFGRPkCLSEUKSQ"/>
+</div>
 
 ## Purpose
 
