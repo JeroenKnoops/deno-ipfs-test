@@ -63,3 +63,14 @@ $ deno run https://cloudflare-ipfs.com/ipfs/QmTkMPJ5zrtoYBi7WSFqedF4ttL2ZgJDWrfu
 Download https://cloudflare-ipfs.com/ipfs/QmTkMPJ5zrtoYBi7WSFqedF4ttL2ZgJDWrfuAKbXZHchpS
 Welcome to Deno 🦕
 ```
+
+## IPFS-Proxy
+
+Package already known:
+<img src="https://ipfs.io/ipfs/QmWEFQb9NApuGSCYjwuhGCUk8J7d5vWDbiqojTwhSBubfr"/>
+
+New package:
+<img src="https://ipfs.io/ipfs/QmdpC5RhT2xqE7gtjNLdfkRt3mJQYF7ZCehUf5tHwDov29"/>
+
+Diagrams are made in [https://sequencediagram.org/](https://sequencediagram.org/).
+Source is in: [sequence-diagram.uml](./sequence-diagram.uml)

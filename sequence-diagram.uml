@@ -1,0 +1,58 @@
+title IPFS-Proxy
+
+participant Client
+participant IPFS-Proxy
+database sqlite
+database IPFS
+participant Deno-land
+
+alt known in IPFS
+Client->IPFS-Proxy:requests package
+activate IPFS-Proxy
+IPFS-Proxy->IPFS-Proxy:lookup CID
+activate IPFS-Proxy
+IPFS-Proxy->sqlite:lookup CID
+IPFS-Proxy<--sqlite:CID
+deactivate IPFS-Proxy
+deactivate sqlite
+IPFS-Proxy->IPFS-Proxy:get from IPFS
+activate IPFS-Proxy
+IPFS-Proxy->IPFS:lookup package
+IPFS-Proxy<--IPFS:package
+deactivate IPFS-Proxy
+Client<--IPFS-Proxy:package
+deactivate IPFS-Proxy
+end
+
+alt unknown in IPFS
+Client->IPFS-Proxy:requests package
+activate IPFS-Proxy
+IPFS-Proxy->IPFS-Proxy:lookup CID
+activate IPFS-Proxy
+IPFS-Proxy->sqlite:lookup CID
+IPFS-Proxy<--sqlite:no CID
+deactivate IPFS-Proxy
+
+IPFS-Proxy->IPFS-Proxy:request package Deno-land
+activate IPFS-Proxy
+deactivate IPFS-Proxy
+deactivate sqlite
+
+activate IPFS-Proxy
+IPFS-Proxy->Deno-land: request package
+
+IPFS-Proxy<--Deno-land:package
+deactivate IPFS-Proxy
+
+IPFS-Proxy->IPFS-Proxy:add to IPFS
+
+activate IPFS-Proxy
+IPFS-Proxy->IPFS:add package
+IPFS-Proxy<--IPFS:CID
+IPFS-Proxy->sqlite:store CID
+deactivate IPFS-Proxy
+Client<--IPFS-Proxy:package
+deactivate IPFS-Proxy
+
+end
+
