@@ -64,6 +64,19 @@ Download https://cloudflare-ipfs.com/ipfs/QmTkMPJ5zrtoYBi7WSFqedF4ttL2ZgJDWrfuAK
 Welcome to Deno 🦕
 ```
 
+### Redirect packages to local proxy
+
+```
+cd experiments/import_map
+deno run --importmap=import_map_deno.json --unstable color.ts
+```
+
+```
+cd experiments/import_map
+deno run --importmap=import_map.json --unstable color.ts
+```
+
+
 ## IPFS-Proxy
 
 Package already known:
